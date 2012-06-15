@@ -8,16 +8,12 @@ public class Main {
 	}
 
 	private static void broken() {
-		PublicInterface2 impl2 = Impl2.builder()
-			.setName("Name Broken")
-		.build();
+		PublicInterface2 impl2 = new Impl2("Name Broken");
 		Static.printIt(impl2.getName());
 	}
 
 	private static void ok() {
-		PublicInterface2 impl2 = Impl2.builder()
-			.setName("Name OK")
-		.build();
+		PublicInterface2 impl2 = new Impl2("Name OK");
 		String name = impl2.getName();
 		Static.printIt(name);
 	}
