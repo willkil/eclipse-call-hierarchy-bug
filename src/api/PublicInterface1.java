@@ -11,10 +11,10 @@ public interface PublicInterface1 extends
 
 	public interface PublicInterface1Builder extends
 		PackageInterface1Getters,
-		PackageInterface1Setters<PublicInterface1Builder>,
+		PackageInterface1Setters,
 		Builder<PublicInterface1>
 	{
-
+		PublicInterface1Builder setName(String name);
 	}
 
 }
@@ -23,8 +23,6 @@ public interface PublicInterface1 extends
 	String getName();
 }
 
-/*package*/ interface PackageInterface1Setters<
-	T extends PackageInterface1Setters<T> & Builder<?>
-> {
-	T setName(String name);
+/*package*/ interface PackageInterface1Setters {
+	PackageInterface1Setters setName(String name);
 }
