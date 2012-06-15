@@ -11,7 +11,6 @@ public interface PublicInterface1 extends
 
 	public interface PublicInterface1Builder extends
 		PackageInterface1Getters,
-		PackageInterface1Setters,
 		Builder<PublicInterface1>
 	{
 		PublicInterface1Builder setName(String name);
@@ -21,8 +20,4 @@ public interface PublicInterface1 extends
 
 /*package*/ interface PackageInterface1Getters {
 	String getName();
-}
-
-/*package*/ interface PackageInterface1Setters {
-	PackageInterface1Setters setName(String name);
 }
