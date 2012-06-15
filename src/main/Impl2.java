@@ -15,18 +15,10 @@ public class Impl2 implements PublicInterface2 {
 		return new Builder();
 	}
 
-	public PublicInterface2Builder copy() {
-		return new Builder(this);
-	}
-
 	private static class Builder implements PublicInterface2Builder {
 		private String name = "Impl2 name";
 
 		private Builder() {}
-
-		private Builder(Impl2 original) {
-			this.name = original.name;
-		}
 
 		public String getName() {
 			return name;
