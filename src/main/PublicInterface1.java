@@ -1,8 +1,6 @@
-package api;
+package main;
 
-import api.PublicInterface1.PublicInterface1Builder;
-import api.builder.Builder;
-import api.builder.Copyable;
+import main.PublicInterface1.PublicInterface1Builder;
 
 public interface PublicInterface1 extends
 	PackageInterface1Getters,

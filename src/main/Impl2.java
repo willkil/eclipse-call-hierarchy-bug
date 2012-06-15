@@ -1,6 +1,4 @@
-package impl;
-
-import api.PublicInterface2;
+package main;
 
 public class Impl2 implements PublicInterface2 {
 	private final String name;

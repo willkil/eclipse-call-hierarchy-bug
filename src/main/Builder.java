@@ -1,4 +1,4 @@
-package api.builder;
+package main;
 
 public interface Builder<T> {
 	T build();

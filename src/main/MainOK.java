@@ -1,9 +1,5 @@
 package main;
 
-import impl.Impl2;
-import util.Static;
-import api.PublicInterface2;
-
 public class MainOK {
 
 	public static void main(String[] args) {

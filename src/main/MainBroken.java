@@ -1,9 +1,5 @@
 package main;
 
-import impl.Impl2;
-import util.Static;
-import api.PublicInterface2;
-
 public class MainBroken {
 
 	public static void main(String[] args) {
